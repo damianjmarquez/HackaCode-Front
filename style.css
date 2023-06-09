@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* FORMATO LOGIN */
+.fondo__login {
+  background: rgb(254,131,69);
+  background: linear-gradient(90deg, rgba(254,131,69,1) 0%, rgba(246,113,52,1) 58%, rgba(166,96,27,1) 92%);
+}
+
+.btn_login {
+  background: rgb(244, 211, 151);
+}
+/* FORMATO LOGIN */
+
+
+
+
+
 /*  FORMATO PARA EL LAYOUT GENERAL */
 .parent {
     background: rgb(229, 228, 228);
@@ -11,7 +27,7 @@
     grid-template-areas: "menu header header"
                          "menu content content"
                          "menu footer footer";
-    grid-template-rows: 50px 500px 100px ;
+    grid-template-rows: 50px auto 100px ;
     grid-template-columns: 250px 500px;
 }
 

@@ -6,32 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <script src="./script.js" defer="defer"></script>
-  <title>title</title>
+  <title>ParkAdmin - Login</title>
 </head>
 
-<body>
+<body class="fondo__login d-flex justify-content-center">
+  
+  <div class="card mt-5 d-flex " style="max-width: 540px;">
+    <div class="row g-0">
+      
+      <div class="col-md-4">
+        <img src="./images/monanaRusa.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
 
-  <form action="#" method="post">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title text-center">Login</h2>
+          <form>
 
-    <fieldset>
-      <legend>Log in</legend>
-      <section>
-        <!-- <label for="email">Email</label> -->
-        <input id="email" name="email" type="email" placeholder="your@mail.com" required>
-      </section>
+            <section class="container-fluid">
+               <input class="form-control-lg" id="email" name="email" type="email" placeholder="Usuario" required>
+                              
+               <input class="form-control-lg" id="password" name="password" type="password" placeholder="Password" required>
+               
+               <button class="btn btn-lg text-dark border-dark btn-outline-warning btn_login" id="signin" type="submit">Entrar</button>
+            </section>
+        
+          </form>
 
-      <section>
-        <!-- <label for="password">Password</label> -->
-        <input id="password" name="password" type="password" placeholder="Password" required>
-        <button id="toggle-password" type="button">Show password</button>
-        <div id="password-requirements">At least 8 characters, one lowercase and one uppercase letter.</div>
-      </section>
-    </fieldset>
+        </div>
+      </div>
+    </div>
 
-    <button id="signin" type="submit">Sign in</button>
+  </div>
 
-  </form>
+
 
 </body>
 
