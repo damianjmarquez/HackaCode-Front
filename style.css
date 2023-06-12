@@ -1,116 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.juegos__imagen {
+  width: 200px;
+  height: 125px;
+  object-fit: cover;
 }
 
-/* FORMATO LOGIN */
-.fondo__login {
-  background: rgb(254,131,69);
-  background: linear-gradient(90deg, rgba(254,131,69,1) 0%, rgba(246,113,52,1) 58%, rgba(166,96,27,1) 92%);
+.barraMenu__LOGO {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
 }
 
-.btn_login {
-  background: rgb(244, 211, 151);
+body{
+   overflow-x: hidden;
 }
-/* FORMATO LOGIN */
-
-
-
-
-
-/*  FORMATO PARA EL LAYOUT GENERAL */
-.parent {
-    background: rgb(229, 228, 228);
-    min-height: 100px;
-    display: grid;
-    grid-template-areas: "menu header header"
-                         "menu content content"
-                         "menu footer footer";
-    grid-template-rows: 50px auto 100px ;
-    grid-template-columns: 250px 500px;
-}
-
-.parent header {
-    grid-area: header;
-    background: whitesmoke;
-}
-
-.parent .menu {
-    grid-area: menu;
-    background: rgb(255, 255, 255);
-}
-
-.parent .content {
-    grid-area: content;
-    background: rgb(229, 228, 228);
-}
-
-.parent footer {
-    grid-area: footer;
-    background: whitesmoke;
-}
-
-
-/*  FORMATO PARA EL LAYOUT GENERAL */
-
-
-
-/* Formato para MENU */
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.logo__Admin {
-    width: auto;
-    height: 80px;
-}
-
-.parque__logo {
-    width: auto;
-    height: 80px;
-}
-/* Formato para MENU */
-
-
-
-
-
-/* Formato para HEADER */
-header {
-  display: flex;
-  flex-direction: row-reverse ;
-  align-content: center;
-  align-items: center;
-}
-h6 {
-  margin: 6px;
-}
-.user__avatar {
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-}
-/* Formato para HEADER */
-
-/* Formato para CONTENT */
-.content {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.seleccion_juegos {
-  display: flex;
-  justify-content: center;
-}
-
-/* Formato para CONTENT */
-
-/* Formato para FOOTER */
-footer {
-  text-align: center;
-  font-size: small;
-}
-/* Formato para FOOTER */
