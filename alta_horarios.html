@@ -2,166 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ac5241a91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>park admin</title>
+    <title>ParkAdmin</title>
+
+
+
+
 </head>
-<body>
-    <div class="parent"> <!-- Contenedor principal del LAYOUT    -->
-      
-      <!-- Contenido del HEADER / superior derecha -->
-      <header>
-        <img class="user__avatar" src="./images/useravatar.png" alt="">
-        <h6>ADMINISTRADOR</h6>
-      </header>
+<body class="bg-primary-subtle">
 
-      <!-- Contenido del MENU / Barra lateral izquierda-->
-      <div class="menu">
+    <main class="container d-flex">
+
+
+        <!-- MENU LATERAL IZQUIEDO-->
+        <div class="col-3 bg-white vh-100">
+          <div class="row">
+              <p class="h3 text-center"><a href="./index.html">ParkAdmin</a></p>
+              <img src="./images/parqueLOGO2.png" alt="" class="barraMenu__LOGO">
+          </div>
+
+          <div class="row">
+             
+              <!-- Contenedor de la botonera -->
+              <div class="accordion accordion-flush" id="accordionFlushExample"> 
         
-        <div class="logo__Admin">
-            <img class="parque__logo" src="./images/parqueLOGO.png" alt="">
-        </div>
-
-        <div class="accordion accordion-flush" id="accordionFlushExample"> <!-- Contenedor de la botonera -->
-          
-          <!-- Boton Individual de la botonera -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Empleados
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Alta de empleados</div>
-              <div class="accordion-body">Lista de empleados</div>
-            </div>
+                  <!-- Boton Individual de la botonera -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Empleados
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="./alta_usuario.html">Alta de empleados</a></div>
+                      <div class="accordion-body"><a href="./listado_empleados.html">Lista de empleados</a></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-juegos" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Juegos
+                      </button>
+                    </h2>
+                    <div id="flush-juegos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="./alta_juegos.html">Alta de Juegos</a></div>
+                      <div class="accordion-body"><a href="./listado_juegos.html">Lista de Juegos</a></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-entradas" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Entradas
+                      </button>
+                    </h2>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="./alta_entradas.html">Alta de Entradas</a></div>
+                      <div class="accordion-body"><a href="./listado_entradas.html">Lista de Entradas</a></div>
+                      
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-clientes" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Clientes
+                      </button>
+                    </h2>
+                    <div id="flush-clientes" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="./alta_clientes.html">Alta de Clientes</a></div>
+                      <div class="accordion-body"><a href="./listado_clientes.html">Lista de Clientes</a></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Horarios" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Horarios
+                      </button>
+                    </h2>
+                    <div id="flush-Horarios" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="./alta_horarios.html">Alta de Horarios</a></div>
+                      <div class="accordion-body"><a href="./listado_horarios.html">Lista de Horarios</a></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-informes" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Informes
+                      </button>
+                    </h2>
+                    <div id="flush-informes" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Entradas por dia</div>
+                      <div class="accordion-body">Entradas por juego</div>
+                      <div class="accordion-body">Empleados por Juego</div>
+                    </div>
+                  </div>
+        
+              </div>
+        
+              </div>
+                          
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-juegos" aria-expanded="false" aria-controls="flush-collapseOne">
-                Juegos
-              </button>
-            </h2>
-            <div id="flush-juegos" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Alta de Juegos</div>
-              <div class="accordion-body">Lista de Juegos</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-entradas" aria-expanded="false" aria-controls="flush-collapseOne">
-                Entradas
-              </button>
-            </h2>
-            <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Alta de Entradas    </div>
-              <div class="accordion-body">Lista de Entradas</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-clientes" aria-expanded="false" aria-controls="flush-collapseOne">
-                Clientes
-              </button>
-            </h2>
-            <div id="flush-clientes" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Alta de Clientes</div>
-              <div class="accordion-body">Lista de Clientes</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Horarios" aria-expanded="false" aria-controls="flush-collapseOne">
-                Horarios
-              </button>
-            </h2>
-            <div id="flush-Horarios" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Alta de Horarios</div>
-              <div class="accordion-body">Lista de Horarios</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-informes" aria-expanded="false" aria-controls="flush-collapseOne">
-                Informes
-              </button>
-            </h2>
-            <div id="flush-informes" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Entradas por dia</div>
-              <div class="accordion-body">Entradas por juego</div>
-              <div class="accordion-body">Empleados por Juego</div>
-            </div>
-          </div>
-
       </div>
 
-      </div>
 
-      <!-- Contendio del CONTENT / Contenido general ubicado en el centro derecho -->
-      <div class="content">
-        <h4>Alta de empleados</h4>
-
-<form>
-
-  <div class="mb-3">
-    <label for="formulario_nombre" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="formulario_nombre">
-  </div>
-
-  <div class="mb-3">
-    <label for="formulario_apellido" class="form-label">Apellido</label>
-    <input type="text" class="form-control" id="formulario_apellido">
-  </div>
-
-  <div class="mb-3">
-    <label for="formulario_DNI" class="form-label">DNI</label>
-    <input type="text" class="form-control" id="formulario_DNI">
-  </div>
-  
-  <div class="mb-3">
-    <label for="formulario_fechaNac" class="form-label">Fecha Nacimiento</label>
-    <input type="date" class="form-control" id="formulario_fechaNac">
-  </div>
-
-  <label for="formulario_rolEmpleado" class="form-label">Cargo del Empleado</label>
-  <select class="form-select mb-3" aria-label="Default select example">
-    <option selected>Seleccione Cargo</option>
-    <option value="1">Administrador</option>
-    <option value="2">Operario</option>
-    <option value="3">Cliente</option>
-  </select>
+        <!-- CONTENIDO GENERAL DERECHO -->
+        <div class="col-9">
+            
 
 
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
 
-  <button type="submit" class="btn btn-primary">Subir Usuario</button>
-</form>
+            <!-- BARRA SUPERIOR CON USUARIO -->
+            <div class="bg-primary-subtle d-flex justify-content-end align-items-center">
+                <div class="row">
+                    <div class="d-flex">
+                        <h6 class="m-1">ADMINISTRADOR</h6>
+                        <i class="fa-regular fa-user border border-dark border-1 rounded-circle p-1"></i>
+                    </div>
+                </div>
+            </div>
 
 
-        
-        
-        
-      </div>
 
-      <!-- Contenido del FOOTER / Informacion en el pie de pagina -->
-      <footer>Copyright 2023 © Hackaton de Hackacode</footer>
+
+            <!-- CONTENIDO CENTRAL -->
+            
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <section class="bg-primary-subtle">
+                        <div class="container">
+                            <h4 class="text-center">Bienvenido a ParkAdmin</h4>
+                            <p>Seleccione el juego para gestionar</p>
+                            <div class="row mb-3">
+                               
+                                <div class="col-4 d-flex">
+                                    <div class="card border">
+                                       <div class="card-img-top">
+                                           <img src="./images/monanaRusa.jpg" alt="" class="juegos__imagen">
+                                       </div>
+                                       <div class="card-body">
+                                           <p class="h5 text-center">Montaña Rusa</p>
+                                       </div>
+                                   </div>
+                               </div>
     
-    </div>
-</body>
-</html>
+                               <div class="col-4 d-flex">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <img src="./images/juegoAutitos.jpg" alt="" class="juegos__imagen">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h5 text-center">Autos Chocones</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-4 d-flex">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <img src="./images/juegoRaro.jpg" alt="" class="juegos__imagen">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h5 text-center">Martillo</p>
+                                    </div>
+                                </div>
+                            </div>
+                               
+    
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+                
+            
+            
+
+
+
+            <!-- FOOTER -->
+            
+
+        </main>
+
+        <div class="row">
+            <div class="bg-primary-subtle justify-content-center align-items-start text-center">
+                Copyright 2023 © Hackaton de Hackacode
+            </div>
+        </div>    
+
+
+        </div>
+    
+    
+    
+    
+    </body>
+    </html>
