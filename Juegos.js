@@ -1,15 +1,21 @@
-const url ="http://localhost:8080/personas/traer"
-const url2 ="http://localhost:8080/personas/borrar/"
-const url3 = "http://localhost:8080/personas/crear"
-const url4 = "http://localhost:8080/personas/editar/"
+//LLAMADO A LAS URL CORRESPONDIENTE PARA LOS CRUD PARA LOS EMPLEADOS
+const url ="http://localhost:8080/juegos/traer"
+const url2 ="http://localhost:8080/juegos/borrar/"
+const url3 = "http://localhost:8080/juegos/crear"
+const url4 = "http://localhost:8080/juegos/editar/"
+
+//seleccionar el tbody para en el ingresar los datos que se obtienen de la tabla 
 const contenedor = document.querySelector('tbody')
 let resultados = ''
 const modalArticulo = new bootstrap.Modal(document.getElementById('modalArticulo'))
 const FormArticulo  = document.querySelector('form')
-const usuario  = document.getElementById('usuario')
-const clave  = document.getElementById('contraseña')
+const nombre  = document.getElementById('nombre')
+const personas  = document.getElementById('personas')
+const precio  = document.getElementById('precio')
 let opcion=''
 
+
+//boton correspondiente al la ventana modal para crear y modificar los datos
 btnCrear.addEventListener('click', ()=>{
    
     modalArticulo.show()
@@ -22,22 +28,18 @@ const mostrar =(articulos) =>{
     articulos.forEach(articulo => {
         resultados +=  `<tr>
                             <td>${articulo.id}</td>
-                            <td>${articulo.usuario}</td>
-                            <td>${articulo.contraseña}</td>
+                            <td>${articulo.nombre}</td>
+                            <td>${articulo.cantidadDePersonas}</td>
+                            <td>${articulo.precio}</td>
                             <td class="text-center"> <a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-danger">Eliminar</a></td>
 
-                        </tr>`
-        
+                        </tr>`   
     })
-
     contenedor.innerHTML = resultados
 }
 
 
-
-
-//procedimient0 mostrar
-
+//MOSTRANDO LOS DATOS CORRESPONDIENTES EN LA TABLA
 fetch(url)
 .then(response => response.json())
 .then(data=> mostrar(data))
@@ -52,13 +54,12 @@ const on = (element, event, selector, handler)=>{
     })
 }
 
-// Borrar
+// BORRAR LA LINEA DE LA TABLA MEDIANTE EL BOTON BTNBORRAR INGRESADO EN LA MISMA LINEA CON SU FETCH CORRESPONDIENTE
 on(document, "click", '.btnBorrar', e =>{
     const fila = e.target.parentNode.parentNode
     const id = fila.firstElementChild.innerHTML
     
-    alertify.confirm("Desea eliminar este usuario?",
-  function(){
+    
     fetch(url2 + id,{
         method: 'DELETE'
     })
@@ -66,34 +67,30 @@ on(document, "click", '.btnBorrar', e =>{
     .then(() => location.reload())
     
 
-    alertify.success('Ok')
-  },
-  function(){
-    alertify.error('Cancel')
-  })
+    
 })
 
 
-//Editar
-
+//EDITAR LOS DATOS DE LA VENTANA EMERGENTE
 let idForm = 0
 on(document, "click", '.btnEditar', e =>{
     const fila = e.target.parentNode.parentNode
     idForm = fila.children[0].innerHTML
     const idFormu = fila.children[0].innerHTML
-    const usuarioForm = fila.children[1].innerHTML
-    const contraseñaForm= fila.children[2].innerHTML
+    const nombreForm = fila.children[1].innerHTML
+    const personasForm= fila.children[2].innerHTML
+    const precioForm= fila.children[3].innerHTML
     id.value = idFormu
-    usuario.value = usuarioForm
-    
-    contraseña.value = contraseñaForm
+    nombre.value = nombreForm
+    cantidadDePersonas.value = personasForm
+    precio.value = precioForm
     opcion = 'editar'
     modalArticulo.show()
     
 })
 
-// para crear y editar
 
+//SI LA OPCION SELECCIONADA ES LA DE CREAR SE ABRE CON LOS DATOS INGRESADOS EN DICHA LINEA DE LO CONTRARIO SE CREAN LOS DATOS
 FormArticulo.addEventListener('submit', (e) =>{
     e.preventDefault()
     if(opcion == 'crear'){  
@@ -105,8 +102,10 @@ FormArticulo.addEventListener('submit', (e) =>{
             },
             body: JSON.stringify({
                 id:id.value,
-                usuario:usuario.value,
-                contraseña:contraseña.value
+                nombre:nombre.value,
+                cantidadDePersonas:cantidadDePersonas.value,
+                precio:precio.value
+                
                 
             })
         })
@@ -129,9 +128,10 @@ FormArticulo.addEventListener('submit', (e) =>{
             'Content-Type':'application/json'
         },
         body: JSON.stringify({
-            id:id.value,
-            usuario:usuario.value,
-            contraseña:contraseña.value
+                id:id.value,
+                nombre:nombre.value,
+                cantidadDePersonas:cantidadDePersonas.value,
+                precio:precio.value
             
         })
     })
