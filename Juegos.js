@@ -31,7 +31,7 @@ const mostrar =(articulos) =>{
                             <td>${articulo.nombre}</td>
                             <td>${articulo.cantidadDePersonas}</td>
                             <td>${articulo.precio}</td>
-                            <td class="text-center"> <a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-danger">Eliminar</a></td>
+                            <td class="text-center"> <a class="btnEditar btn btn-primary">Editar</a><a onclick="actualizarPagina()" class="btnBorrar btn btn-danger">Eliminar</a></td>
 
                         </tr>`   
     })
@@ -70,6 +70,9 @@ on(document, "click", '.btnBorrar', e =>{
     
 })
 
+function actualizarPagina(){
+    location.reload();
+}
 
 //EDITAR LOS DATOS DE LA VENTANA EMERGENTE
 let idForm = 0
