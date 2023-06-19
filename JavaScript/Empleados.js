@@ -30,7 +30,7 @@ const mostrar =(articulos) =>{
                             <td>${articulo.id}</td>
                             <td>${articulo.usuario}</td>
                             <td>${articulo.contraseña}</td>
-                            <td class="text-center"> <a class="btnEditar btn btn-primary">Editar</a><a onclick="actualizarPagina()" class="btnBorrar btn btn-danger">Eliminar</a></td>
+                            <td class="text-center"> <a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-danger">Eliminar</a></td>
 
                         </tr>`
         
@@ -75,9 +75,7 @@ on(document, "click", '.btnBorrar', e =>{
     
 })
 
-function actualizarPagina(){
-    location.reload();
-}
+
 
 
 //EDITAR LOS DATOS DE LA VENTANA EMERGENTE
@@ -90,10 +88,11 @@ on(document, "click", '.btnEditar', e =>{
     const contraseñaForm= fila.children[2].innerHTML
     id.value = idFormu
     usuario.value = usuarioForm
+    
     contraseña.value = contraseñaForm
     opcion = 'editar'
     modalArticulo.show()
-   
+    
 })
 
 
@@ -126,14 +125,9 @@ FormArticulo.addEventListener('submit', (e) =>{
        
 
     }
-
-    
- 
-    if(opcion == 'editar'){  
-          console.log(idForm)
-          //localhost:8080/personas/editar/2?id=2&usuario=Damian&contraseña=nuevoDato
-       fetch(url4+idForm, {
-        
+    if(opcion == 'editar'){
+       console.log('opcion editar')
+       fetch(url4, {
         method: 'PUT',
         headers:{
             'Content-Type':'application/json'
@@ -146,8 +140,7 @@ FormArticulo.addEventListener('submit', (e) =>{
         })
     })
     .then(response => response.json() )
-    .then(response => console.log(response) )
-    
+    .then(response => location.reload())
 
     }
     modalArticulo.hide()
