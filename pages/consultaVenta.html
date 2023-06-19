@@ -22,7 +22,7 @@
           <div class="row">
               <p class="h1 text-center"><a href="../index.html">ParkAdmin</a></p>
               <div class="container justify-content-center imagenLogo">
-                <img src="../images/parqueLOGO.png" alt="parqueLOGO" class="img-fluid">
+                <img src="../images/parqueLOGO3.png" alt="parqueLOGO" class="img-fluid">
               </div>
           </div>
 
@@ -121,11 +121,71 @@
             <!-- CONTENIDO CENTRAL -->
             
             <div class="container">
-                <div class="row">
-                    <p style="text-align: center;" class="h3">Ingresa una fecha y el juego para saber las entradas vendidas</p>
-                    <p style="text-align: center;" class="h3">Ingresa el dia en el cual desea saber la cantidad de ventas</p>
-                    <p style="text-align: center;" class="h3">Ingresa el mes y año para saber la cantidad de ventas</p>
-                </div>
+                <form>
+                  <p class="h3 text-center"> Busqueda de Ventas en fecha especifica:</p>
+                  <label class="form-label" for="fecha_ventas">Seleccione fecha:</label>
+                  <input class="form-control" type="date" id="fecha_ventas">
+
+                  <label class="form-label mt-3" id="juego_ventas">Seleccione el Juego:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="cliente">Montaña Rusa</option>
+                    <option value="operario">Autos Chocones</option>
+                    <option value="administrador">Martillo</option>
+                  </select>
+                </form>
+                  <button class="btn btn-secondary btn-lg mt-3">Consultar Ventas</button>
+
+                <hr>
+
+                <form>
+                  <p class="h3 text-center">Busqueda de fechas generales</p>
+                  <label class="form-label mt-3" id="mes_ventas">Seleccione el Mes:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="Todos">Todos</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+
+                  <label class="form-label mt-3" id="dia_ventas">Seleccione el día:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="Todos">Todos</option>
+                    <option value="Domingo">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sabado">Sabado</option>
+                    <option value="Domingo">Domingo</option>
+                  </select>
+
+                  <label class="form-label mt-3" id="year_ventas">Seleccione el Año:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select>
+
+                  <label class="form-label mt-3" id="juego_ventas">Seleccione el Juego:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="cliente">Montaña Rusa</option>
+                    <option value="operario">Autos Chocones</option>
+                    <option value="administrador">Martillo</option>
+                  </select>
+
+                  <button class="btn btn-secondary btn-lg mt-3 mb-5">Consultar Ventas</button>
+                  
+                </form>
             
                   <!-- FOOTER -->
         <footer>
