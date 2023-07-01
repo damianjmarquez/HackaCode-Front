@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>ParkAdmin</title>
+
+
+
+
+</head>
+<body class="bg-primary-subtle">
+
+    <main class="container-fluid d-flex main">
+
+
+        <!-- MENU LATERAL IZQUIEDO-->
+        <div class="col-3 bg-white vh-100">
+          <div class="row">
+              <p class="h1 text-center"><a class="nombre-parke">SuperPark</a></p>
+              <div class="container justify-content-center imagenLogo">
+                <img src="../images/user2.png" alt="parqueLOGO" class="imglogo">
+              </div>
+          </div>
+
+          <div class="row">
+             
+              <!-- Contenedor de la botonera -->
+              <div class="accordion accordion-flush" id="accordionFlushExample"> 
+        
+                  <!-- Boton Individual de la botonera -->
+
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <a class="gris">EMPLEADOS</a>
+                      </button>
+                    </h2>
+                    
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="../HTML/DatosEmpleados.html">DATOS DE EMPLEADOS</a></div>
+                      <div class="accordion-body"><a href="../HTML/EmpleadoLista.html">LISTA DE USUARIOS</a></div>
+                    </div>
+                  </div>
+        
+                  
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-entradas" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <a class="gris">ENTRADAS</a>
+                      </button>
+                    </h2>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta.html">Consulta por fecha para todo los juegos</a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta2.html">Consulta para un juego y una fecha específica</a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta3.html">Sumatoria de ventas en un mes/año </a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta4.html">Sumatoria de ventas por dia</a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta5.html">Comprador con mas entradas compradas</a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta6.html">Juego con mayor entradas vendidas</a></div>
+                      
+                    </div>
+                    <div id="flush-entradas" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                     
+                      
+                      <div class="accordion-body"><a href="../HTML/consultaVenta7.html">Venta por Ciente y Fecha</a></div>
+                      
+                    </div>
+                  </div>
+
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-clientes" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <a class="gris">CLIENTES</a>
+                      </button>
+                    </h2>
+                    <div id="flush-clientes" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      
+                      <div class="accordion-body"><a href="../HTML/Clientes.html">LISTA DE CLIENTES</a></div>
+                    </div>
+                  </div>
+        
+                  
+        
+                  
+        
+              </div>
+        
+          </div>
+                          
+          </div>
+      </div>
+
+
+        <!-- CONTENIDO GENERAL DERECHO -->
+        <div class="container-fluid contenedor-derecho">
+            
+
+
+          <!-- BARRA SUPERIOR CON USUARIO -->
+          <div class="barra-superior">
+            <h2>Administrador General</h2>
+            <div class="uauarios-barra">
+          
+              <a href="../HTML/login_principal.html"><img class="foto-usuario-barra" src="../images/cerrar-secion.png" ></a>
+              <a href="../HTML/indexAdmin.html"><img class="foto-usuario-barra" src="../images/volver-inicio.png" ></a>
+            </div>
+          </div>
+            <!-- CONTENIDO CENTRAL -->
+            
+            <div class="container">
+                <div class="row">
+                    
+                    
+
+
+                    <form>
+                      <p class="h3 text-center">Juego con mas entradas vendidas hasta la fecha seleccionada </p>
+                      
+
+                      <label class="form-label" for="fecha_ventas">Seleccione fecha:</label>
+                      <input class="form-control" type="date"  id="monto2">
+                      <br>
+                      <br>
+                    </form>
+                    <button onclick="fecha5()" class="consultas" >Total de ventas</button>
+                    
+                    <table class="tablas">
+                        <thead>
+                            <tr class="text-center">
+                              <th class="th">Dni</th>
+                                <th class="th">Juego</th>
+                                <th class="th">Fecha</th>  
+                                <th class="th">Precio</th>  
+                            </tr>
+                        </thead>
+                        <tbody class="ventas3">
+                        </tbody>
+                        
+                      </table>
+
+
+                    <table class="tablas">
+                      <thead>
+                          <tr class="text-center tr">
+                            <th class="th">Comprador que mas entradas compro</th>
+                            
+                          </tr>
+      
+                      </thead>
+                      <tbody>
+                        <td class="suma2" ></td>
+                        
+      
+                      </tbody>
+                        
+                    </table>
+                    
+                    <br>
+                    
+
+                    
+                </div>
+        <script src="../javascripts/consulta-venta.js"></script> 
+        <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>       
+    </body>
+    </html>

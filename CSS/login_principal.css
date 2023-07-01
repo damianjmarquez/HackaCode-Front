@@ -1,0 +1,81 @@
+*{
+    font-family:"Roboto";
+    background-image: url(../images/fondo_login.jpg);
+    background-size: cover;
+}
+body{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs{
+    background: none;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.contenedor{
+    background: rgb(255, 255, 255,0.1);
+    box-shadow: 20px 20px 40px 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+input{
+    background:rgb(255, 255, 255) ;
+    border: none;
+    padding-left: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 8px;
+    outline: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+   
+}
+
+
+.usuario{
+    width: 90%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 150px;
+    background: none;
+    border-radius: 10px;
+    
+}
+
+
+
+a{
+    width:90%;
+    background: rgb(26, 26, 190);
+
+}
+
+h3{
+    
+    background: none;
+    
+}
+.titulo{
+    color: rgb(110, 110, 110);
+}
+
+

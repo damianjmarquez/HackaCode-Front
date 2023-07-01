@@ -1,9 +1,110 @@
+*{
+  font-family: "Roboto-Regular";
+}
+body{
+  background: rgb(255, 255, 255);
+        background: linear-gradient(28deg, rgb(255, 255, 255) 0%, rgb(185, 185, 185) 58%, rgb(255, 255, 255) 90%);
+        background-repeat: no-repeat;
+        
+        
+        
+}
+
+.btn-secondary{
+  margin-left: 30%;
+}
 .imagenLogo{
-  width: 70%;
+  width: 95%;
+  height:170px;
+  margin-bottom: 20px;
+}
+.bg-login-image{
+  padding: 30px;
+}
+
+.consultas{
+  width:30%;
+  margin-right: 30px;
+}
+
+
+
+
+.bienvenidos{
+  width: 85%;
+  height:45%;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.consultas{
+  margin-left: 40%;
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  background: #325a57;
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+}
+.tablas{
+  margin-left: 30px;
+  background: #ffffff;
+  border: 1px solid black;
+  width: 95%;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+.imglogo{
+  
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+}
+.tr{
+  border: 1px solid black;
+  
+}
+.th{
+  background: #325a57;
+  height: 40px;
+  color: white;
+  border: 1px solid black;
+  
+}
+.td{
+  border: 1px solid black;
+  padding-left: 10px;
+  
 }
 
 a {
   text-decoration: none;
+  color: rgb(117, 117, 117);
+  
+}
+.foto-usuario-barra{
+  
+  width: 35px;
+  height:30px;
+  border-radius: 50px;
+}
+.barra-superior{
+  height:60px;
+  color: rgb(121, 121, 121);
+  background:rgb(255, 255, 255,0.8);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nombre-parke{
+  text-decoration: none;
+  color: #949494;
 }
 
 .main{
@@ -13,6 +114,7 @@ a {
 
 .contenedor-derecho{
   padding: 0;
+  
 }
 
 p, h4{
@@ -47,6 +149,7 @@ span{
   overflow: hidden;
 }
 
+
 .juegos__imagen {
   width: 100%;
   height: 30svh;
@@ -55,40 +158,22 @@ span{
   object-fit:fill;
 }
 
-.juegos__imagen:hover{
-  transform: scale(1.2);
-  filter: grayscale(0);
-}
 
-.accordion-button:hover {
-  color: blueviolet;
+
+.accordion-button:focus {
+  outline: rgba(0, 0, 0, 0);
+
 }
 
 .accordion-body:hover{
-  background-color:darkgray;
-  color: blueviolet;
-}
-.accordion-body:hover a{
-  background-color:darkgray;
-  color: blueviolet;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #f5f5f5;
-  text-align: center;
+  background:rgb(247, 247, 247);
+  
+  
+  
 }
 
-.bg-login-image{
-  background: url("../images/parqueLOGO2.png");
-  background-position: center;
-  background-size:contain;
-  background-repeat: no-repeat;
 
-}
+
 .user div{
   padding-bottom: 2svh;
 }
@@ -105,34 +190,10 @@ footer {
   text-decoration: none;
 }
 
-
-/* ICONOS */
-.icon {
-  width: 1.7rem;
-  height: 1.7rem;
+.form-control{
+  width: 70%;
+  margin-left: 15%;
 }
-
-.edit {
-  fill: rgb(68, 68, 212);
-  width: 1.8rem;
-  height: 1.8rem;
-}
-.trash {
-  width: 1.7rem;
-  height: 1.7rem;
-  fill: rgb(219, 60, 60);
-}
-.exit {
-  width: 2.2rem;
-  height: 2.2rem;
-  margin-right: 1rem;
-  margin-left: 0.5rem;
-}
-
-/* ICONOS */
-
-.fondo__colores {
-        background: rgb(249,255,143);
-        background: linear-gradient(28deg, rgba(249,255,143,1) 0%, rgba(255,173,179,1) 58%, rgba(255,141,228,1) 92%);
-        background-repeat: no-repeat;
+.form-label{
+  margin-left: 15%;
 }
