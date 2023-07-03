@@ -145,30 +145,18 @@
 
 
                     <form>
-                      <p class="h3 text-center">Comprador con mas entradas </p>
-                      <label class="form-label" for="fecha_ventas">Seleccione fecha:</label>
-                      <input class="form-control" type="date"  id="monto3">
+                      <p class="h3 text-center">Comprador con mas entradas vendidas </p>
+                      <label class="form-label" for="fecha_ventas">Seleccione fecha Desde:</label>
+                      <input class="form-control" type="date"  id="datos">
 
-                      <label class="form-label" for="fecha_ventas">Seleccione fecha:</label>
-                      <input class="form-control" type="date"  id="monto2">
+                      <label class="form-label" for="fecha_ventas">Seleccione fecha Hasta:</label>
+                      <input class="form-control" type="date"  id="datos1">
                       <br>
                       <br>
                     </form>
-                    <button onclick="fecha5()" class="consultas" >Total de ventas</button>
+                    <button onclick="fecha5()" class="consultas" >Consultar</button>
                     
-                    <table class="tablas">
-                        <thead>
-                            <tr class="text-center">
-                              <th class="th">Dni</th>
-                                <th class="th">Juego</th>
-                                <th class="th">Fecha</th>  
-                                <th class="th">Precio</th>  
-                            </tr>
-                        </thead>
-                        <tbody class="ventas3">
-                        </tbody>
-                        
-                      </table>
+                    
 
 
                     <table class="tablas">
@@ -179,8 +167,8 @@
                           </tr>
       
                       </thead>
-                      <tbody>
-                        <td class="suma2" ></td>
+                      <tbody class="masVentas">
+                        
                         
       
                       </tbody>
@@ -192,7 +180,7 @@
 
                     
                 </div>
-        <script src="../javascripts/consultaVenta5.js"></script> 
+        <script src="../javascripts/consulta-venta.js"></script> 
         <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>       
     </body>
     </html>

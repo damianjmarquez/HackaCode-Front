@@ -1,10 +1,13 @@
+
 window.onload = function(){
     window.location.hash = "no-back-button";
     window.location.hash = "Again-No-back-button";
     window.onhashchange = function(){
         window.location.hash = "no-back-button";
+        
     }
 }
+
 
 const url ="http://localhost:8080/personas/traer"
 
@@ -70,13 +73,10 @@ const on = (element, event, selector, handler)=>{
 
 
 
-window.location.hash="Again-No-back-button";//esta linea es necesaria para chrome
-window.onhashchange=function(){window.location.hash="no-back-button";}
 
 
 
-//window.location.hash="no-back-button";
-//window.location.hash="Again-No-back-button";
-//window.onhashchange=function(){window.location.hash="no-back-button";}
+
+
 
 
